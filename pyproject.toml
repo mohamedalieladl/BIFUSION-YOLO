@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bifusion-yolo"
+version = "1.0.0"
+description = "A lightweight P2-enhanced YOLO26 with bidirectional multi-scale fusion for ultra-small UAV detection"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "numpy>=1.24",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "tqdm>=4.66",
+]
+
+[project.scripts]
+bifusion-train = "bifusion.train:main"
+bifusion-val = "bifusion.val:main"
+bifusion-export = "bifusion.export:main"
+
+[tool.setuptools.packages.find]
+include = ["bifusion*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

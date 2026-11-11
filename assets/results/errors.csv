@@ -1,0 +1,8 @@
+category,false_negatives,percent_fn,false_positives,percent_fp
+Tiny target (<10 px),139,63.8,0,0.0
+Motion blur,41,18.8,0,0.0
+Occlusion,22,10.1,0,0.0
+Background clutter,0,0.0,33,56.9
+Duplicate detection,0,0.0,14,24.1
+Other,16,7.3,11,19.0
+Total,218,100.0,58,100.0

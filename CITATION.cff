@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript below."
+title: "BiFusion-YOLO: A Lightweight P2-Enhanced YOLO26 with Bidirectional Multi-Scale Fusion for Ultra-Small UAV Detection"
+type: software
+authors:
+  - family-names: Ali
+    given-names: Mohamed
+  - family-names: Safan
+    given-names: Mahmoud M.
+  - family-names: Ayyad
+    given-names: Sarah M.
+year: 2026
+abstract: "Reference implementation of BiFusion-YOLO, a P2-enhanced YOLO26 detector with a weighted BiFPN and cross-scale feature fusion for ultra-small UAV detection."
+keywords:
+  - UAV detection
+  - small object detection
+  - YOLO26
+  - BiFPN
+  - Haar wavelet

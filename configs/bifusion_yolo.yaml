@@ -1,0 +1,45 @@
+model:
+  nc: 1
+  width: 64
+  bifpn_blocks: 2
+  bins: 16
+  heads: [P2, P3, P4]
+
+train:
+  epochs: 300
+  batch: 16
+  imgsz: 640
+  optimizer: AdamW
+  lr0: 0.001
+  lrf: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  ema_decay: 0.9999
+  amp: true
+  close_mosaic: 10
+  seed: 0
+  workers: 8
+
+loss:
+  box: 7.5
+  cls: 0.5
+  dfl: 1.5
+  tal_alpha: 1.0
+  tal_beta: 6.0
+  topk: 10
+
+augment:
+  mosaic: 1.0
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  flip: 0.5
+  scale: 0.5
+  translate: 0.1
+  copy_paste: 0.1
+
+val:
+  conf: 0.001
+  iou: 0.70
+  max_det: 300

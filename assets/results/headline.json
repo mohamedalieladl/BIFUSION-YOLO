@@ -1,0 +1,43 @@
+{
+  "model": "BiFusion-YOLO",
+  "baseline": "YOLO26n",
+  "dataset": "DUT Anti-UAV detection split, test set",
+  "input": "640x640 RGB",
+  "parameters": 1783110,
+  "parameters_millions": 1.78,
+  "gflops": 7.4,
+  "baseline_parameters_millions": 2.58,
+  "baseline_gflops": 8.2,
+  "parameter_reduction_percent": 30.9,
+  "flops_reduction_percent": 9.8,
+  "precision": 97.2,
+  "recall": 90.3,
+  "map50": 95.6,
+  "map50_95": 66.4,
+  "baseline_precision": 92.9,
+  "baseline_recall": 85.3,
+  "baseline_map50": 91.1,
+  "baseline_map50_95": 60.8,
+  "gain_points": {
+    "precision": 4.3,
+    "recall": 5.0,
+    "map50": 4.5,
+    "map50_95": 5.6
+  },
+  "small_objects": {
+    "bin": "width < 10 px",
+    "instances": 2427,
+    "baseline_map50_95": 38.5,
+    "model_map50_95": 54.1,
+    "gain_points": 15.6
+  },
+  "large_object_tradeoff": {
+    "bin": "width > 32 px",
+    "loss_points": [6.5, 13.0]
+  },
+  "speed": {
+    "rtx3090_fp32_fps": 89,
+    "jetson_orin_fp16_fps": 34,
+    "runtime": "TensorRT 10, batch 1, 640x640"
+  }
+}

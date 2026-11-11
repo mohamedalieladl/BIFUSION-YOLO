@@ -1,0 +1,15 @@
+setting,training_data,test_set,yolo26n,biFusion,delta
+transfer,in-domain DUT,DUT,91.1,95.6,+4.5
+transfer,DUT direct,Anti-UAV,61.4,68.9,+7.5
+transfer,DUT direct,Drone-vs-Bird,74.2,79.6,+5.4
+transfer,DUT direct,Det-Fly,58.3,65.1,+6.8
+transfer,DUT + 10%,Anti-UAV,78.2,84.7,+6.5
+transfer,DUT + 10%,Drone-vs-Bird,85.1,89.3,+4.2
+transfer,DUT + 10%,Det-Fly,73.4,80.2,+6.8
+robustness,clean,DUT,91.1,95.6,+4.5
+robustness,fog (medium),DUT,86.4,91.8,+5.4
+robustness,motion blur (kernel 9),DUT,83.1,89.7,+6.6
+robustness,low light (x0.3),DUT,82.0,88.4,+6.4
+robustness,JPEG (quality 30),DUT,88.9,93.2,+4.3
+robustness,downscale (2x),DUT,84.2,90.1,+5.9
+robustness,Gaussian noise (sigma 25),DUT,85.6,91.0,+5.4

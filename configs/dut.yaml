@@ -1,0 +1,14 @@
+# DUT Anti-UAV detection split, YOLO format.
+# Expected layout:
+#   datasets/DUT/images/train/*.jpg
+#   datasets/DUT/images/val/*.jpg
+#   datasets/DUT/images/test/*.jpg
+#   datasets/DUT/labels/train/*.txt
+#   datasets/DUT/labels/val/*.txt
+#   datasets/DUT/labels/test/*.txt
+path: datasets/DUT
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names: [UAV]
